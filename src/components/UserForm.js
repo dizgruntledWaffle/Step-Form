@@ -33,8 +33,8 @@ export class UserForm extends Component {
 
     // Handle fields change
     handleChange = input => e => {
-        this.setState({[input] : e.target.value});
-    }      
+        this.setState({ [input] : e.target.value});
+    };     
 
     render() {
         const { step } = this.state;
@@ -50,7 +50,7 @@ export class UserForm extends Component {
                   handleChange={this.handleChange}
                   values={values}
                   />
-                )
+                );
             case 2 :  
                 return <h1>FormPersonalDetails</h1>;
             case 3 :
